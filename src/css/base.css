@@ -1,0 +1,76 @@
+/* CSS VARIABLES */
+:root {
+  --bg: #0d1117;
+  --bg-secondary: #161b22;
+  --accent: #00ffe0;
+  --deep-blue: #00aaff;
+  --deep-green: #1cf0b7;
+  --text: #e8f3ff;
+  --text-secondary: #b3def2;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* SCROLLBAR STYLING */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(13, 17, 23, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00aaff, #1cf0b7);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 224, 0.6);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #1cf0b7, #00aaff);
+  box-shadow: 0 0 20px rgba(0, 255, 224, 1);
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(13, 17, 23, 0.3);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00aaff rgba(13, 17, 23, 0.3);
+}
+
+/* SCROLL PROGRESS BAR */
+.scroll-progress {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(90deg, #00aaff, #1cf0b7, #00ffe0);
+  box-shadow: 0 0 15px rgba(0, 255, 224, 0.8);
+  z-index: 9999;
+  transition: width 0.1s ease;
+}
