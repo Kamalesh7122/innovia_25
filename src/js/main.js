@@ -1,7 +1,6 @@
 // NAVBAR SHOW/HIDE ON SCROLL
 let lastScrollY = window.scrollY;
 const navbar = document.getElementById('navbar');
-
 window.addEventListener('scroll', () => {
   if(window.scrollY > lastScrollY && window.scrollY > 50){
     navbar.classList.add('hide');
@@ -45,10 +44,7 @@ if(heroBg) {
     
     if(heroSection) {
       const heroHeight = heroSection.offsetHeight;
-      
-      // Only apply parallax when scrolling within hero section
       if(scrolled < heroHeight) {
-        // Background moves at 50% speed (half of scroll speed)
         heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
       }
     }

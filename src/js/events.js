@@ -27,18 +27,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // SCROLL PROGRESS BARS (TOP AND BOTTOM)
 window.addEventListener('scroll', () => {
-  const scrollProgressTop = document.getElementById('scrollProgressTop');
   const scrollProgressBottom = document.getElementById('scrollProgressBottom');
   const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
   const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   const scrollPercentage = (scrollTop / scrollHeight) * 100;
   
-  // Update top progress bar
-  if (scrollProgressTop) {
-    scrollProgressTop.style.width = scrollPercentage + '%';
-  }
-  
-  // Update bottom progress bar (if exists)
   if (scrollProgressBottom) {
     scrollProgressBottom.style.width = scrollPercentage + '%';
   }

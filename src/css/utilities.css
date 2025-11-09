@@ -1,4 +1,3 @@
-/* RESPONSIVE - MOBILE OPTIMIZED */
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
@@ -11,7 +10,6 @@
     justify-content: center;
   }
   
-  /* Hero section fixes */
   .hero {
     padding-top: 140px;
   }
@@ -25,7 +23,6 @@
     font-size: 1.8rem;
   }
   
-  /* REDUCE subtitle text */
   .subtitle {
     font-size: 1rem !important;
     line-height: 1.6;
@@ -35,7 +32,6 @@
     width: 250px;
   }
   
-  /* Countdown adjustments */
   .countdown {
     gap: 1.5rem;
     padding: 20px 15px;
@@ -55,18 +51,15 @@
     font-size: 0.85rem;
   }
   
-  /* Section headings - REDUCED */
   .section h2 {
     font-size: 2rem !important;
   }
   
-  /* Lead text - REDUCED */
   .lead-text {
     font-size: 1rem !important;
     line-height: 1.7;
   }
   
-  /* Event card content - REDUCED */
   .event-info p {
     font-size: 0.9rem !important;
     line-height: 1.6;
@@ -76,7 +69,6 @@
     font-size: 1.2rem !important;
   }
   
-  /* Contact section - REDUCED */
   .contact-item h4 {
     font-size: 1rem !important;
   }
@@ -90,7 +82,6 @@
     gap: 2rem;
   }
   
-  /* Stack cards vertically on mobile */
   .event-card {
     flex-direction: column;
     min-height: auto;
@@ -109,105 +100,23 @@
   .event-info h3 {
     font-size: 1.4rem;
   }
-}
-
-@media (max-width: 480px) {
-  /* Very small screens */
-  .hero {
-    padding-top: 160px;
+  
+  /* EVENT PAGE RESPONSIVE */
+  .event-header h1 {
+    font-size: 2.5rem;
   }
   
-  .hero-content h1 {
-    font-size: 2.2rem;
-    margin-top: 30px;
-  }
-  
-  .hero-content h2 {
-    font-size: 1.5rem;
-  }
-  
-  /* EXTRA SMALL subtitle */
-  .subtitle {
-    font-size: 0.95rem !important;
-    line-height: 1.6;
-  }
-  
-  /* Countdown extra small */
-  .countdown {
-    gap: 1rem;
-    padding: 15px 10px;
-  }
-  
-  .countdown > div {
-    min-width: 50px;
-    padding: 4px 6px;
-  }
-  
-  .countdown span {
-    font-size: 1.8rem;
-    margin-bottom: 5px;
-  }
-  
-  .countdown small {
-    font-size: 0.75rem;
-    letter-spacing: 0.8px;
-  }
-  
-  /* Section headings - EXTRA SMALL */
-  .section {
-    padding: 50px 15px;
-  }
-  
-  .section h2 {
-    font-size: 1.8rem !important;
-  }
-  
-  /* Lead text - EXTRA SMALL */
-  .lead-text {
-    font-size: 0.95rem !important;
-    line-height: 1.6;
-  }
-  
-  /* Event card content - EXTRA SMALL */
-  .event-info p {
-    font-size: 0.85rem !important;
-    line-height: 1.5;
-  }
-  
-  .event-info h3 {
-    font-size: 1.1rem !important;
-  }
-  
-  /* Event info padding */
-  .event-info {
-    padding: 20px 15px !important;
-  }
-  
-  /* Contact section - EXTRA SMALL */
-  .contact-item h4 {
-    font-size: 0.95rem !important;
-  }
-  
-  /* Button text */
-  .btn-more {
-    font-size: 0.85rem !important;
-    padding: 8px 18px !important;
-  }
-  
-  .event-image {
-    height: 200px;
-  }
-  
-  .event-info {
-    padding: 20px 15px;
-  }
-  
-  .event-info h3 {
-    font-size: 1.3rem;
-  }
-  
-  .event-info p {
+  .event-meta {
+    gap: 1.5rem;
     font-size: 0.95rem;
+  }
+  
+  .event-description {
+    padding: 30px 20px;
+  }
+  
+  .event-description h2 {
+    font-size: 1.8rem;
   }
   
   footer {
@@ -231,5 +140,140 @@
   
   .social-links a {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 160px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem;
+    margin-top: 30px;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .subtitle {
+    font-size: 0.95rem !important;
+    line-height: 1.6;
+  }
+  
+  .countdown {
+    gap: 1rem;
+    padding: 15px 10px;
+  }
+  
+  .countdown > div {
+    min-width: 50px;
+    padding: 4px 6px;
+  }
+  
+  .countdown span {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+  }
+  
+  .countdown small {
+    font-size: 0.75rem;
+    letter-spacing: 0.8px;
+  }
+  
+  .section {
+    padding: 50px 15px;
+  }
+  
+  .section h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  .lead-text {
+    font-size: 0.95rem !important;
+    line-height: 1.6;
+  }
+  
+  .event-info p {
+    font-size: 0.85rem !important;
+    line-height: 1.5;
+  }
+  
+  .event-info h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  .event-info {
+    padding: 20px 15px !important;
+  }
+  
+  .contact-item h4 {
+    font-size: 0.95rem !important;
+  }
+  
+  .btn-more {
+    font-size: 0.85rem !important;
+    padding: 8px 18px !important;
+  }
+  
+  .event-image {
+    height: 200px;
+  }
+  
+  .event-info h3 {
+    font-size: 1.3rem;
+  }
+  
+  /* EVENT PAGE MOBILE */
+  .event-header h1 {
+    font-size: 2rem;
+  }
+  
+  .event-tagline {
+    font-size: 1.2rem;
+  }
+  
+  .event-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .event-description h2 {
+    font-size: 1.4rem !important;
+    margin: 25px 0 12px 0;
+  }
+  
+  .round-card h3 {
+    font-size: 1.1rem !important;
+    line-height: 1.3;
+  }
+  
+  .round-card p {
+    font-size: 0.85rem !important;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .round-card ul li {
+    font-size: 0.85rem !important;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+  
+  .rules-list li,
+  .criteria-list li,
+  .benefits-list li {
+    font-size: 0.85rem !important;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  
+  .round-card {
+    padding: 15px !important;
+  }
+  
+  .event-description {
+    padding: 30px 20px !important;
   }
 }
