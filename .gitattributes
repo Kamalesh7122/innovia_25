@@ -1,0 +1,10 @@
+# These are the codes I used to build the website
+
+*.html linguist-detectable=true linguist-language=HTML
+*.css linguist-detectable=true linguist-language=CSS
+*.js linguist-detectable=true linguist-language=JavaScript
+
+# -----------------------------------
+
+*.min.css linguist-vendored=true
+*.min.js linguist-vendored=true
