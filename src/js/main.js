@@ -10,16 +10,32 @@ window.addEventListener('scroll', () => {
   lastScrollY = window.scrollY;
 });
 
-// COUNTDOWN TIMER - Event: November 6, 2025 at 9:00 AM IST
+
+// COUNTDOWN TIMER - Event: Nov 6, 2025 at 9:00 AM
+
 function updateCountdown() {
-  const eventDate = new Date('2025-11-06T09:00:00+05:30').getTime();
-  const now = new Date().getTime();
-  const diff = eventDate - now;
+  // Event started time in our department
+  const eventStartDate = new Date('2025-11-06T09:00:00+05:30').getTime();
   
-  if(diff < 0){
-    document.getElementById('countdown').innerHTML = "<div style='font-size:1.5rem; color:#01ecfb;'>Event Started!</div>";
+  // Event ended time
+  const eventEndDate = new Date('2025-11-06T16:30:00+05:30').getTime();
+  
+  const now = new Date().getTime();
+  
+  // Check if event has ended
+  if(now > eventEndDate){
+    document.getElementById('countdown').innerHTML = "<div style='font-size:1.5rem; color:#ff4444;'>Event Ended!</div>";
     return;
   }
+  
+  // Check if event is currently live
+  if(now >= eventStartDate && now <= eventEndDate){
+    document.getElementById('countdown').innerHTML = "<div style='font-size:1.5rem; color:#00ff00;'>Event is Live Now! 🎉</div>";
+    return;
+  }
+  
+  // Event hasn't started yet - show countdown
+  const diff = eventStartDate - now;
   
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -34,6 +50,7 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
 
 // PARALLAX SCROLLING EFFECT FOR BACKGROUND
 const heroBg = document.querySelector('.hero-bg');
